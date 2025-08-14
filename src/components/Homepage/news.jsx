@@ -32,6 +32,7 @@ const HomeNewsHighlights = () => {
           style={{
             border: '1px solid #ddd',
             padding: '1rem',
+            marginRight : "1rem",
             marginBottom: '1rem',
             borderRadius: '6px',
           }}

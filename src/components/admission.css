@@ -11,4 +11,30 @@
   .subject-table th {
     background-color: #f2d7d5;
   }
+  .fee-table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+  }
+  
+  .fee-table th,
+  .fee-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .fee-table th {
+    background-color: #f2d7d5;
+    border: 1px solid #999;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .fee-table th,
+    .fee-table td {
+      font-size: 12px;
+      padding: 6px;
+    }
+  }
   

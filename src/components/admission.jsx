@@ -4,86 +4,89 @@ import "./admission.css";
 export default function Admission() {
   return (
     <div className="admission-page">
-      <h1>Admission Details - Session 2025-26</h1>
+      <h1 style = {{textAlign : "center"}}>Admission Details - Session 2025-26</h1>
 
       {/* Fee Structure Table */}
       <h2>Fee Structure</h2>
-      <table className="fee-table">
-        <thead>
-          <tr>
-            <th>Class</th>
-            <th>Admission Fee</th>
-            <th>1st Quarter<br />(New Students)</th>
-            <th>1st Quarter<br />(Old Students)</th>
-            <th>2nd Quarter</th>
-            <th>3rd Quarter</th>
-            <th>Total Fee<br />(Old Students)</th>
-            <th>Total Fee<br />(New Students)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Nursery</td>
-            <td>5000</td>
-            <td>1650</td>
-            <td>4950</td>
-            <td>4950</td>
-            <td>4950</td>
-            <td>16500</td>
-            <td>21500</td>
-          </tr>
-          <tr>
-            <td>LKG / UKG</td>
-            <td>5000</td>
-            <td>1800</td>
-            <td>4950</td>
-            <td>4950</td>
-            <td>5400</td>
-            <td>18300</td>
-            <td>24000</td>
-          </tr>
-          <tr>
-            <td>1 to 5</td>
-            <td>7000</td>
-            <td>2150</td>
-            <td>6450</td>
-            <td>6450</td>
-            <td>6450</td>
-            <td>21500</td>
-            <td>28500</td>
-          </tr>
-          <tr>
-            <td>6 to 8</td>
-            <td>8000</td>
-            <td>2300</td>
-            <td>7200</td>
-            <td>7200</td>
-            <td>7200</td>
-            <td>23800</td>
-            <td>31800</td>
-          </tr>
-          <tr>
-            <td>9 & 10</td>
-            <td>9000</td>
-            <td>2400</td>
-            <td>7800</td>
-            <td>7800</td>
-            <td>7800</td>
-            <td>26000</td>
-            <td>35000</td>
-          </tr>
-          <tr>
-            <td>11 & 12</td>
-            <td>9000</td>
-            <td>2800</td>
-            <td>8400</td>
-            <td>8400</td>
-            <td>8400</td>
-            <td>28000</td>
-            <td>37000</td>
-          </tr>
-        </tbody>
-      </table>
+<div style={{ overflowX: "auto" }}>
+  <table className="fee-table" style={{ minWidth: "800px", borderCollapse: "collapse", width: "100%" }}>
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Admission Fee</th>
+        <th>1st Quarter<br />(New Students)</th>
+        <th>1st Quarter<br />(Old Students)</th>
+        <th>2nd Quarter</th>
+        <th>3rd Quarter</th>
+        <th>Total Fee<br />(Old Students)</th>
+        <th>Total Fee<br />(New Students)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Nursery</td>
+        <td>5000</td>
+        <td>1650</td>
+        <td>4950</td>
+        <td>4950</td>
+        <td>4950</td>
+        <td>16500</td>
+        <td>21500</td>
+      </tr>
+      <tr>
+        <td>LKG / UKG</td>
+        <td>5000</td>
+        <td>1800</td>
+        <td>4950</td>
+        <td>4950</td>
+        <td>5400</td>
+        <td>18300</td>
+        <td>24000</td>
+      </tr>
+      <tr>
+        <td>1 to 5</td>
+        <td>7000</td>
+        <td>2150</td>
+        <td>6450</td>
+        <td>6450</td>
+        <td>6450</td>
+        <td>21500</td>
+        <td>28500</td>
+      </tr>
+      <tr>
+        <td>6 to 8</td>
+        <td>8000</td>
+        <td>2300</td>
+        <td>7200</td>
+        <td>7200</td>
+        <td>7200</td>
+        <td>23800</td>
+        <td>31800</td>
+      </tr>
+      <tr>
+        <td>9 & 10</td>
+        <td>9000</td>
+        <td>2400</td>
+        <td>7800</td>
+        <td>7800</td>
+        <td>7800</td>
+        <td>26000</td>
+        <td>35000</td>
+      </tr>
+      <tr>
+        <td>11 & 12</td>
+        <td>9000</td>
+        <td>2800</td>
+        <td>8400</td>
+        <td>8400</td>
+        <td>8400</td>
+        <td>28000</td>
+        <td>37000</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
       {/* Free Kit */}
       <h2>Free Kit on Admission</h2>

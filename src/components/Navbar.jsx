@@ -11,7 +11,7 @@ export default function Navbar(){
           <img src="/images/logo.jpg" alt="logo" className="logo" />
           <div className="brand-text">
             <div className="title">Guardian & Guide</div>
-            <div className="subtitle">Public School</div>
+            <div className="subtitle">Hr. Sec. School</div>
           </div>
         </div>
         <nav className={`nav ${open? 'open':''}`}>

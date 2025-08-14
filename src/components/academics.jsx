@@ -93,69 +93,74 @@ const Academics = () => {
 
       {/* Science Table */}
       <h2>Science Toppers</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Name</th>
-            <th>Marks</th>
-            <th>Percentage</th>
-          </tr>
-        </thead>
-        <tbody>
-          {scienceData.map((row, i) => (
-            <tr key={i}>
-              {row.map((col, j) => (
-                <td key={j}>{col}</td>
-              ))}
-            </tr>
+<div style={{ overflowX: "auto" }}>
+  <table className="toppers-table" style={{ minWidth: "500px", borderCollapse: "collapse", width: "100%" }}>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      {scienceData.map((row, i) => (
+        <tr key={i}>
+          {row.map((col, j) => (
+            <td key={j}>{col}</td>
           ))}
-        </tbody>
-      </table>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
-      {/* Commerce Table */}
-      <h2>Commerce Toppers</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Name</th>
-            <th>Marks</th>
-            <th>Percentage</th>
-          </tr>
-        </thead>
-        <tbody>
-          {commerceData.map((row, i) => (
-            <tr key={i}>
-              {row.map((col, j) => (
-                <td key={j}>{col}</td>
-              ))}
-            </tr>
+<h2>Commerce Toppers</h2>
+<div style={{ overflowX: "auto" }}>
+  <table className="toppers-table" style={{ minWidth: "500px", borderCollapse: "collapse", width: "100%" }}>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      {commerceData.map((row, i) => (
+        <tr key={i}>
+          {row.map((col, j) => (
+            <td key={j}>{col}</td>
           ))}
-        </tbody>
-      </table>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
-      {/* High School Table */}
-      <h2>High School Toppers</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Name</th>
-            <th>Marks</th>
-            <th>Percentage</th>
-          </tr>
-        </thead>
-        <tbody>
-          {highSchoolData.map((row, i) => (
-            <tr key={i}>
-              {row.map((col, j) => (
-                <td key={j}>{col}</td>
-              ))}
-            </tr>
+<h2>High School Toppers</h2>
+<div style={{ overflowX: "auto" }}>
+  <table className="toppers-table" style={{ minWidth: "500px", borderCollapse: "collapse", width: "100%" }}>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      {highSchoolData.map((row, i) => (
+        <tr key={i}>
+          {row.map((col, j) => (
+            <td key={j}>{col}</td>
           ))}
-        </tbody>
-      </table>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
     </div>
   );
 };

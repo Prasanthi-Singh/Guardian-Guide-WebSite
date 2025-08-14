@@ -85,4 +85,29 @@
   tr:nth-child(even) {
     background-color: #fafafa;
   }
+  .toppers-table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+  }
+  
+  .toppers-table th,
+  .toppers-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .toppers-table th {
+    background-color: #f2d7d5;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .toppers-table th,
+    .toppers-table td {
+      font-size: 12px;
+      padding: 6px;
+    }
+  }
   
