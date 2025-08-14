@@ -1,80 +1,102 @@
 .hero {
-    position: relative;
-    height: 420px;
-    overflow: hidden;
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity .6s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Centered overlay */
+.overlay_1 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px 18px;
+  border-radius: 6px;
+  max-width: 90%;
+  box-sizing: border-box;
+}
+
+.overlay_1 h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0;
+}
+
+.dot.active {
+  background: var(--accent);
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  .hero {
+    height: 350px;
   }
-  
-  .slide {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: opacity .6s ease;
-  }
-  
-  .slide.active {
-    opacity: 1;
-  }
-  
   .slide img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    display: block;
+    height: 350px;
   }
-  
-  /* Centered overlay */
+  .overlay_1 h1 {
+    font-size: 22px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: 260px;
+  }
+  .slide img {
+    height: 260px;
+  }
   .overlay_1 {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 20px 30px;
-    border-radius: 6px;
+    padding: 8px 14px;
+    top: 75%;
   }
-  
-  .overlay h1 {
-    margin: 0;
-    font-size: 28px;
-  }
-  
-  .overlay p {
-    margin: 6px 0 0;
+  .overlay_1 h1 {
     font-size: 16px;
   }
-  
-  .dots {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 12px;
-    display: flex;
-    gap: 8px;
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .overlay_1 h1 {
+    font-size: 14px;
   }
-  
-  .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    border: 0;
-  }
-  
-  .dot.active {
-    background: var(--accent);
-  }
-  
-  @media (max-width: 768px) {
-    .hero {
-      height: 260px;
-    }
-    .slide img {
-      height: 260px;
-    }
-    .overlay h1 {
-      font-size: 20px;
-    }
-  }
-  
+}
