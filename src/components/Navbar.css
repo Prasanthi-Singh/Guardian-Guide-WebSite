@@ -37,3 +37,27 @@ nav li + li {
   border-left: 1px solid white;
   padding-left: 15px;
 }
+
+@media(max-width:768px){
+  .nav {
+    position: absolute;
+    right: 12px;
+    top: 72px;
+    flex-direction: column;
+    background: var(--primary);
+    padding: 12px;
+    border-radius: 8px;
+    display: none;
+    gap: 10px; /* smaller gap for vertical menu */
+  }
+  .nav.open {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+  nav li + li {
+    border-left: none; /* remove divider lines in mobile */
+    padding-left: 0;
+  }
+}
