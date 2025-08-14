@@ -1,0 +1,9 @@
+:root{
+  --primary: #1E3A8A;
+  --accent: #FBBF24;
+  --bg: #f6f8fb;
+  --card: #ffffff;
+}
+*{box-sizing:border-box}
+a{color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}

@@ -1,0 +1,10 @@
+/* General layout */
+main{padding-bottom:40px;}
+/* Navbar styles are inside component css, but keep some global helpers */
+.section-title{display:flex;align-items:center;justify-content:space-between;margin:24px 0;}
+.section-title h2{color:var(--primary);margin:0}
+body{background-color:beige;}
+/* responsive helpers */
+@media (max-width:768px){
+  .container{padding:0 12px}
+}

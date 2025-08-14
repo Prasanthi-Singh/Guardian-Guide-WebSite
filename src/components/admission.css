@@ -1,0 +1,14 @@
+.subject-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  .subject-table th, .subject-table td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: left;
+  }
+  .subject-table th {
+    background-color: #f2d7d5;
+  }
+  

@@ -1,0 +1,39 @@
+.nav-header{background:linear-gradient(90deg,brown, orange);color:white;position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.logo {
+  height: 70px; /* Adjust to fit your navbar height */
+  width: auto;  /* Keeps aspect ratio */
+  object-fit: contain;
+}
+.brand-text .title{font-weight:700;font-size:1.1rem}
+.brand-text .subtitle{font-size:0.85rem;opacity:0.9}
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{color:white;text-decoration:none;padding:8px 10px;border-radius:6px}
+.nav a:hover{background:rgba(255,255,255,0.08)}
+.hamburger{display:none;background:transparent;border:0;color:white;font-size:22px}
+@media(max-width:768px){
+  .nav{position:absolute;right:12px;top:72px;flex-direction:column;background:var(--primary);padding:12px;border-radius:8px;display:none}
+  .nav.open{display:flex}
+  .hamburger{display:block}
+}
+nav li {
+  list-style: none; /* removes dots */
+}
+
+nav {
+  display: flex;
+  gap: 20px; /* space between items */
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+nav li + li {
+  border-left: 1px solid white;
+  padding-left: 15px;
+}
